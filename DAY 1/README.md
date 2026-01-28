@@ -19,94 +19,66 @@ By the end of Day 1, you'll be able to:
 ## 📚 The Big Ideas
 
 ### **Idea 1: Getting Input from the User**
-Imagine your program is a waiter—it needs to ask the customer what they want. Java's `Scanner` tool does exactly that. It listens to what the user types and lets your program use that information.
-
-**Real-world example:** When you use a ATM, it asks you for your PIN. That's input handling!
+Your program needs to listen to what the user types. Java's `Scanner` does this.
+**Example:** ATM asks for your PIN.
 
 ### **Idea 2: Making Choices (if/else)**
-Your program isn't just a robot that does one thing. It needs to make decisions: "If the user presses +, add the numbers. If they press -, subtract them."
+Make decisions: "If user pressed +, add. If -, subtract."
+**Example:** Vending machine checks "If money is enough, dispense snack."
 
-**Real-world example:** A vending machine checks: "If money is enough, dispense snack. If not, show error."
-
-### **Idea 3: Whole Numbers vs Decimal Numbers**
-This is important! If you divide 10 by 3:
-- Using whole numbers: You get 3 (the answer cuts off)
-- Using decimals: You get 3.333... (the real answer)
-
-We'll learn why this matters and how to fix it.
+### **Idea 3: Whole Numbers vs Decimals**
+`10 / 3` = `3` (whole) or `3.333...` (decimal). We need decimals for accurate math.
 
 ### **Idea 4: Protecting Your Program**
-Dividing by zero breaks your program. It's like asking "What's 10 cookies shared among 0 friends?"—it doesn't make sense! We'll add a safety check to prevent this crash.
+Dividing by zero crashes your program. Add a safety check to prevent it.
 
 ---
 
-## 🛠️ Do You Have Everything You Need?
+## 🛠️ Setup (What You Need)
 
-Before you start, make sure:
-- **Java is installed** — You need JDK version 17 or newer (We tested with OpenJDK 25)
-- **Terminal/Command line access** — A way to run commands (Terminal on Mac/Linux, Command Prompt on Windows)
-- **A text editor** — Any editor works (VS Code, Notepad++, etc.)
+- **JDK 17+** (tested with OpenJDK 25)
+- **Terminal** — Mac/Linux Terminal or Windows Command Prompt
+- **Text editor** — VS Code, Notepad++, etc.
 
-**Not sure what you have?** Open your terminal and type:
+**Check if Java is installed:**
 ```bash
 java -version
 ```
-
-If you see a version number, you're good to go! If not, download Java from [oracle.com](https://www.oracle.com/java/technologies/downloads/).
-
----
-
-## 📂 The Files You'll Work With
-
-We give you **4 versions** of the calculator. Each one gets a little better:
-
-### **Version 1: The Basics** — [calculator.java](calculator.java)
-- Asks for two whole numbers (like 10, 25, 100)
-- Asks which operation you want (+, -, *, /)
-- Shows the answer
-- **Goal:** Learn how to get input and do math
-
-### **Version 2: Getting Prettier** — [CalculatorV2.java](CalculatorV2.java)
-- Works with decimal numbers (like 10.5, 3.14)
-- Checks if the operation you typed is valid
-- Shows the math in a nice format: `10.5 + 2.5 = 13.0`
-- **Goal:** Learn input validation (checking if the user typed something we can use)
-
-### **Version 3: Crash Prevention** — [CalculatorV3.java](CalculatorV3.java)
-- Does everything Version 2 does...
-- **Plus:** Stops you from dividing by zero (it gives a friendly error message instead)
-- **Goal:** Learn how to prevent common mistakes
-
-### **Version 4: The Latest** — [CalculatorV4.java](CalculatorV4.java)
-- Even more improvements and polish
-- **Goal:** See how real code keeps getting better over time
-
-**Pro tip:** Start with Version 1, then look at Version 2 to see what changed. Then Version 3, then 4. This is how real programmers learn!
+No? Download from [oracle.com](https://www.oracle.com/java/technologies/downloads/)
 
 ---
 
-## 🚀 How to Run Your Program
+## 📂 The 4 Versions
 
-Each version is its own standalone program. Here's how to run them:
+| Version | File | What's New | Goal |
+|---------|------|-----------|------|
+| 1 | [calculator.java](calculator.java) | Ask for 2 numbers + operation, show answer | Learn input & math |
+| 2 | [CalculatorV2.java](CalculatorV2.java) | Decimal numbers + validate operator | Learn validation |
+| 3 | [CalculatorV3.java](CalculatorV3.java) | Prevent division by zero | Handle errors |
+| 4 | [CalculatorV4.java](CalculatorV4.java) | More improvements & polish | See progression |
 
-**Step 1: Compile** (Turn Java code into something the computer can run)
+**Pro tip:** Compare versions 1→2→3→4 to see how code evolves.
+
+---
+
+## 🚀 Run It
+
+**Compile:**
 ```bash
 javac calculator.java
 ```
 
-**Step 2: Run** (Actually run the program)
+**Run:**
 ```bash
 java calculator
 ```
 
-Do the same for other versions—just replace the filename:
+**One-liner (compile + run):**
 ```bash
-javac CalculatorV2.java && java CalculatorV2
-javac CalculatorV3.java && java CalculatorV3
-javac CalculatorV4.java && java CalculatorV4
+javac calculator.java && java calculator
 ```
 
-**What `&&` does:** It says "compile first, and if that works, then run it." Convenient shortcut!
+*Do the same for V2, V3, V4—just change the filename.*
 
 ---
 
@@ -177,61 +149,49 @@ You can't divide by zero—it breaks your program. So before dividing, ask: "Is 
 
 ---
 
-## 🔤 New Words You Might See
+## 🔤 Key Terms
 
-Don't let these words confuse you! Here's what they mean in simple terms:
-
-- **Compile** — Turn Java code (that humans write) into computer language (that computers understand). `javac` does this.
-- **Scanner** — A tool that listens to what the user types and lets your program use it.
-- **Variable** — A box that stores information. Example: `int age = 25;` (you're storing the number 25 in a box called "age")
-- **Operator** — A symbol used for math: `+` (add), `-` (subtract), `*` (multiply), `/` (divide)
-- **Edge case** — A tricky situation your code needs to handle. Example: dividing by zero
-- **Validation** — Checking if the user typed something your program can actually use
-- **Exception** — An error that happens while your program is running
-- **Input** — Information the user gives to your program (typing a number)
-- **Output** — Information your program shows to the user (printing the answer)
+- **Compile** — Turn code into computer language
+- **Scanner** — Tool to get user input
+- **Variable** — Box that stores data (e.g., `int age = 25`)
+- **Operator** — Math symbol: `+` `-` `*` `/`
+- **Validation** — Check if input is valid before using it
+- **Exception** — Error while running
+- **Input** — Data user gives to program
+- **Output** — Data program shows to user
 
 ---
 
-## 🌍 Why This Matters in the Real World
+## 🌍 Real-World Uses
 
-| What You're Learning | Where You'll Use It |
-|-----|-----|
-| **Getting user input** | Bank apps, email, games, forms—they all ask for information |
-| **Making decisions (if/else)** | Every app ever made—it responds differently to different situations |
-| **Using the right number type** | Money apps need decimals! Whole numbers won't work for cents |
-| **Checking for mistakes** | Professional apps NEVER just crash—they say "Sorry, that didn't work" |
-
-**Real example:** When you use Instagram and type "Hello", that's input. When the app decides to show that message vs an error, that's if/else. When Instagram shows your account balance, it uses decimals. When you send money and get an error, someone put in a mistake-check like we're doing!
+| Concept | Where You See It |
+|---------|------------------|
+| User input | Banks, email, games, forms |
+| Decision-making (if/else) | Every app responds to different situations |
+| Decimals | Money apps—can't use whole numbers for cents |
+| Error checking | Apps crash gracefully, never break silently |
 
 ---
 
-## 🎯 Next Steps After Day 1
+## 🎯 Next: Challenge Yourself
 
-Once you feel comfortable with the 4 versions, try these improvements:
-
-1. **Add a loop** — Let the user do multiple calculations without restarting
-2. **Add modulus (%)** — For finding remainders (10 % 3 = 1)
-3. **Add more operations** — Like power (^) or square root
-4. **Close the Scanner** — Good coding practice (prevents resource leaks)
-5. **Handle bad input** — What if someone types "abc" instead of a number?
-6. **Use Command Line Arguments** — Make it non-interactive
+- Add a loop for multiple calculations
+- Add modulus operator `%` for remainders
+- Handle bad input gracefully
+- Close the Scanner properly
+- Add more operations (power, sqrt)
 
 ---
 
-## ✅ How to Practice
+## 📖 How to Learn
 
-**Best way to learn:**
 1. Read Version 1 code
-2. Run Version 1 and try a few calculations
-3. Look at Version 2 code and spot the differences
-4. Run Version 2
-5. Repeat for V3 and V4
-
-**Then try:**
-- Modify a program (change what prompts say, add a new operation)
-- Test edge cases (what happens if you enter 0, negative numbers, super big numbers?)
-- Write your own version from scratch once you feel ready
+2. Run it, try different numbers
+3. Read Version 2, spot the differences
+4. Run it
+5. Repeat for V3, V4
+6. Modify the code (change prompts, add operations)
+7. Test edge cases (0, negatives, huge numbers)
 
 ---
 
@@ -257,18 +217,15 @@ Once you feel comfortable with the 4 versions, try these improvements:
 
 ## ✅ You're Done When...
 
-You've successfully completed Day 1 when you can do these things:
+- [ ] Java is installed and `java -version` works
+- [ ] Compiled and ran Version 1
+- [ ] Understand why V2 uses decimals
+- [ ] Saw the error message in V3 (divide by zero)
+- [ ] Can explain: "Why can't we divide by zero?"
+- [ ] Spotted differences between V1, V2, V3 code
+- [ ] Ran all 4 versions successfully
 
-- [ ] Install Java and verify it works (`java -version` shows a number)
-- [ ] Compile and run Version 1 successfully
-- [ ] Enter numbers and an operator, see the correct answer
-- [ ] Understand WHY Version 2 uses decimal numbers instead of whole numbers
-- [ ] Run Version 3 and see what happens when you divide by zero
-- [ ] Explain in your own words: "Why can't we divide by zero?"
-- [ ] Look at the code in Version 2 and spot the differences from Version 1
-- [ ] Run ALL 4 versions and see how they're the same but different
-
-**If you checked all the boxes above, you're ready for Day 2!** 🎉
+**Checked all boxes? You're ready for Day 2!** 🎉
 
 ---
 
