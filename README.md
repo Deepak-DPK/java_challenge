@@ -1,55 +1,97 @@
 # 30-Day Java Challenge
 
-This is my personal journey to build consistency and grow as a developer. For 30 consecutive days, I'm committing to write Java code every single day—no matter how small, no matter how busy life gets.
+**A daily commitment to code, learn, and build consistency.**
 
-## Why This Challenge?
-
-I believe consistency beats intensity. Instead of cramming knowledge in irregular bursts, I'm choosing to show up daily with intention. Each day is a chance to learn something new, solidify what I already know, and build the discipline that separates hobbyists from serious developers.
-
-This isn't about perfection. Some days will produce elegant solutions; other days will be messy experiments. Both are valuable. What matters is the commitment to keep going.
-
-## The Structure
-
-Each day lives in its own folder (`DAY 1`, `DAY 2`, and so on). Inside, you'll find the code I wrote that day—sometimes a single file, sometimes multiple versions as I iterate and improve.
-
-I'm keeping the scope deliberately small: 30–60 minutes of focused work. The goal isn't to build complex applications but to practice fundamentals—control flow, input handling, error checking, clean logic. Small, runnable programs that actually work.
-
-## My Daily Process
-
-Every day, I start by deciding what to build. It might be something practical, something fun, or just an exercise to reinforce a concept I'm learning. I sketch out what inputs and outputs should look like, think through edge cases, then dive into coding.
-
-Once the basic version works, I push it one step further—add validation, improve the output format, handle an edge case, or refactor messy logic. Then I reflect: What did I learn today? What felt hard? What should I explore tomorrow?
-
-## What I'm Learning
-
-This challenge is teaching me more than just Java syntax. It's teaching me how to think through problems methodically, how to handle failure without giving up, and how to write code that's clear and maintainable.
-
-I'm practicing the fundamentals: loops and conditionals, working with user input, managing collections, structuring classes, and handling errors gracefully. These aren't flashy topics, but they're the foundation everything else is built on.
-
-## Tools I'm Using
-
-I'm working with OpenJDK (currently on version 25, but anything recent works). Most days, I compile and run from the command line:
-
-```bash
-javac MyProgram.java && java MyProgram
-```
-
-Simple. Direct. No unnecessary complexity while I'm still building fundamentals.
-
-## Tracking My Journey
-
-Inside each day's folder, I'm keeping notes on what I built and what I learned. Nothing formal—just enough to remind future me what I was thinking, what worked, and what I want to try next.
-
-Some days I'll write better code than others. Some days I'll struggle with concepts that should be easy. That's okay. The point is to keep the streak alive and trust the process.
-
-## What Comes Next
-
-By day 30, I won't be a Java master. But I'll be 30 days stronger, 30 programs smarter, and—most importantly—I'll have proven to myself that I can commit to something meaningful and see it through.
-
-This challenge is as much about building the habit of showing up as it is about learning Java. Consistency compounds. Let's see where this takes me.
+⏱️ **Duration:** 30 consecutive days | **Started:** 27 January 2026 | **Status:** In Progress
 
 ---
 
-**Started:** 27 January 2026  
-**Status:** In Progress  
+## 🎯 The Goal
+
+Write Java code every single day for 30 days straight. Build consistency, master fundamentals, and prove I can commit to something meaningful.
+
+**Why?** Consistency beats intensity. Small, daily practice compounds into real mastery.
+
+---
+
+## 📚 What I'm Building
+
+| Day | Topic | Files | Status |
+|-----|-------|-------|--------|
+| 1 | Console Calculator | [calculator.java](DAY%201/calculator.java), [V2](DAY%201/CalculatorV2.java), [V3](DAY%201/CalculatorV3.java), [V4](DAY%201/CalculatorV4.java) | ✅ Done |
+| 2-30 | Coming soon... | — | 🔄 In progress |
+
+---
+
+## 🛠️ My Process
+
+1. **Decide** — Pick what to build today (practical, fun, or educational)
+2. **Build** — Code the basic version (30-60 min focused work)
+3. **Iterate** — Add validation, improve output, handle edge cases
+4. **Reflect** — What did I learn? What's next?
+5. **Push** — Commit code, update docs
+
+---
+
+## 💡 What I'm Practicing
+
+- User input handling & validation
+- Control flow (if/else, loops)
+- Error handling & edge cases
+- Clean, readable code
+- Command-line programming
+
+---
+
+## ⚙️ Setup
+
+- **Java:** OpenJDK 17+
+- **Editor:** VS Code
+- **Command:** `javac Program.java && java Program`
+
+---
+
+## 📂 Project Structure
+
+```
+DAY 1/
+  ├── calculator.java (V1 - Basic)
+  ├── CalculatorV2.java (V2 - Validation)
+  ├── CalculatorV3.java (V3 - Error handling)
+  ├── CalculatorV4.java (V4 - Improvements)
+  └── README.md (Day 1 documentation)
+
+DAY 2/ (Coming soon)
+```
+
+---
+
+## 🚀 Quick Start
+
+Pick a day and jump in:
+
+```bash
+cd "DAY 1"
+javac calculator.java
+java calculator
+```
+
+Each day has its own `README.md` with clear instructions.
+
+---
+
+## 📊 Progress
+
+- **Day 1:** ✅ Console Calculator (4 versions)
+- **Days 2-30:** 🔄 In progress...
+
+---
+
+## 🔑 Key Principle
+
+Perfection is the enemy of progress. Some days will be messy. Some days will be elegant. Both are valuable. What matters is **showing up every single day**.
+
+---
+
+**Next:** [👉 Start with Day 1](DAY%201/README.md)  
 
