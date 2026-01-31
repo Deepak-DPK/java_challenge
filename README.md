@@ -1,4 +1,4 @@
-# 30-Day Java Challenge
+# 30-Day Java Challenge - Learning Journey
 
 **A daily commitment to code, learn, and build consistency.**
 
@@ -6,18 +6,65 @@
 
 ---
 
-## 🎯 The Challenge
+## 📂 Project Structure
 
-Write and commit Java code every single day for 30 days. No skips.
+```
+src/main/java/
+├── DAY1/
+│   ├── v1/ → CalculatorV1.java
+│   ├── v2/ → CalculatorV2.java
+│   ├── v3/ → CalculatorV3.java
+│   └── v4/ → CalculatorV4.java
+└── DAY2/
+    ├── v1/ → Student_Report_card.java
+    ├── v2/ → Student_Report_card_v2.java
+    └── v3/ → Student_Report_card_v3.java
+```
 
----
+## 🔨 Build & Compile
 
-## 📂 Daily Folders
+**Compile all files:**
+```bash
+mvn clean compile
+```
 
-- **[DAY 1](DAY%201/README.md)** — Console Calculator
-- **DAY 2-30** — Coming soon...
+**Compiled output:** `target/classes/`
 
-Each day has its own folder with code and README.
+## ▶️ Run Programs
+
+### DAY 1 - Calculator Programs
+
+```bash
+java -cp target/classes DAY1.v1.CalculatorV1
+java -cp target/classes DAY1.v2.CalculatorV2
+java -cp target/classes DAY1.v3.CalculatorV3
+java -cp target/classes DAY1.v4.CalculatorV4
+```
+
+### DAY 2 - Student Report Card Programs
+
+```bash
+java -cp target/classes DAY2.v1.Student_Report_card
+java -cp target/classes DAY2.v2.Student_Report_card_v2
+java -cp target/classes DAY2.v3.Student_Report_card_v3
+```
+
+## 📋 Maven Commands
+
+| Command | Purpose |
+|---------|---------|
+| `mvn clean` | Remove compiled files |
+| `mvn compile` | Compile source code |
+| `mvn clean compile` | Clean and recompile |
+| `mvn package` | Create JAR file |
+
+## 🔒 Version Control
+
+All compiled files and build artifacts are ignored (.gitignore):
+- `*.class`
+- `target/`
+- `.idea/`, `*.iml`
+- `.settings/`, `.project`
 
 ---
 
